@@ -1,0 +1,292 @@
+Table created
+Database setup complete
+Input zipCodes: [2295420, 2295421, -123, -33, 2295422]
+-123: Invalid
+-33: Invalid
+
+Valid zipCodes: [2295420, 2295421, 2295422]
+Ending method addZipCodes..
+viewCurrentWeatherAtZipCode
+Request URL: https://yahoo-weather5.p.rapidapi.com/weather?woeid=2295422&f=json&u=c
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+Connection leased: [id: 0][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+Opening connection {s}->https://yahoo-weather5.p.rapidapi.com:443
+Connecting to yahoo-weather5.p.rapidapi.com/13.251.221.33:443
+Connecting socket to yahoo-weather5.p.rapidapi.com/13.251.221.33:443 with timeout 10000
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ peer principal: CN=*.p.rapidapi.com
+ peer alternative names: [*.p.rapidapi.com]
+ issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+Connection established 192.168.0.104:52031<->13.251.221.33:443
+http-outgoing-0: set socket timeout to 60000
+Executing request GET /weather?woeid=2295422&f=json&u=c HTTP/1.1
+Target auth state: UNCHALLENGED
+Proxy auth state: UNCHALLENGED
+http-outgoing-0 >> GET /weather?woeid=2295422&f=json&u=c HTTP/1.1
+http-outgoing-0 >> accept-encoding: gzip
+http-outgoing-0 >> user-agent: unirest-java/1.3.11
+http-outgoing-0 >> x-rapidapi-host: yahoo-weather5.p.rapidapi.com
+http-outgoing-0 >> x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca
+http-outgoing-0 >> Host: yahoo-weather5.p.rapidapi.com
+http-outgoing-0 >> Connection: Keep-Alive
+http-outgoing-0 >> "GET /weather?woeid=2295422&f=json&u=c HTTP/1.1[\r][\n]"
+http-outgoing-0 >> "accept-encoding: gzip[\r][\n]"
+http-outgoing-0 >> "user-agent: unirest-java/1.3.11[\r][\n]"
+http-outgoing-0 >> "x-rapidapi-host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-0 >> "x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca[\r][\n]"
+http-outgoing-0 >> "Host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-0 >> "[\r][\n]"
+http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+http-outgoing-0 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+http-outgoing-0 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+http-outgoing-0 << "Date: Sun, 06 Jun 2021 21:08:06 GMT[\r][\n]"
+http-outgoing-0 << "Etag: W/"56c-Mwgj7y8Lo/vm71tzGhzCkbG8S+U"[\r][\n]"
+http-outgoing-0 << "Function-Execution-Id: 6n7kz9vmywqz[\r][\n]"
+http-outgoing-0 << "Server: RapidAPI-1.2.8[\r][\n]"
+http-outgoing-0 << "X-Cloud-Trace-Context: d37a4989fe5ba2efa025bbb70130201f;o=1[\r][\n]"
+http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+http-outgoing-0 << "X-RapidAPI-Region: AWS - ap-southeast-1[\r][\n]"
+http-outgoing-0 << "X-RapidAPI-Version: 1.2.8[\r][\n]"
+http-outgoing-0 << "X-RateLimit-Requests-Limit: 1000[\r][\n]"
+http-outgoing-0 << "X-RateLimit-Requests-Remaining: 966[\r][\n]"
+http-outgoing-0 << "X-RateLimit-Requests-Reset: 2549590[\r][\n]"
+http-outgoing-0 << "Content-Length: 1388[\r][\n]"
+http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+http-outgoing-0 << "[\r][\n]"
+http-outgoing-0 << "{"location":{"city":"Coimbatore","region":" TN","woeid":2295422,"country":"India","lat":11.01388,"long":76.969391,"timezone_id":"Asia/Kolkata"},"current_observation":{"wind":{"chill":25,"direction":225,"speed":12.8},"atmosphere":{"humidity":95,"visibility":13.02,"pressure":956,"rising":0},"astronomy":{"sunrise":"5:59 am","sunset":"6:44 pm"},"condition":{"code":27,"text":"Mostly Cloudy","temperature":22},"pubDate":1623033000},"forecasts":[{"day":"Mon","date":1623034800,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Tue","date":1623121200,"low":22,"high":31,"text":"Scattered Thunderstorms","code":47},{"day":"Wed","date":1623207600,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Thu","date":1623294000,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Fri","date":1623380400,"low":22,"high":30,"text":"Cloudy","code":26},{"day":"Sat","date":1623466800,"low":22,"high":28,"text":"Breezy","code":23},{"day":"Sun","date":1623553200,"low":22,"high":25,"text":"Scattered Thunderstorms","code":47},{"day":"Mon","date":1623639600,"low":21,"high":25,"text":"Showers","code":11},{"day":"Tue","date":1623726000,"low":21,"high":26,"text":"Scattered Thunderstorms","code":47},{"day":"Wed","date":1623812400,"low":22,"high":26,"text":"Scattered Thunderstorms","code":47},{"day":"Thu","date":1623898800,"low":21,"high":26,"text":"Scattered Showers","code":39}]}"
+http-outgoing-0 << HTTP/1.1 200 OK
+http-outgoing-0 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+http-outgoing-0 << Content-Type: text/html; charset=utf-8
+http-outgoing-0 << Date: Sun, 06 Jun 2021 21:08:06 GMT
+http-outgoing-0 << Etag: W/"56c-Mwgj7y8Lo/vm71tzGhzCkbG8S+U"
+http-outgoing-0 << Function-Execution-Id: 6n7kz9vmywqz
+http-outgoing-0 << Server: RapidAPI-1.2.8
+http-outgoing-0 << X-Cloud-Trace-Context: d37a4989fe5ba2efa025bbb70130201f;o=1
+http-outgoing-0 << X-Powered-By: Express
+http-outgoing-0 << X-RapidAPI-Region: AWS - ap-southeast-1
+http-outgoing-0 << X-RapidAPI-Version: 1.2.8
+http-outgoing-0 << X-RateLimit-Requests-Limit: 1000
+http-outgoing-0 << X-RateLimit-Requests-Remaining: 966
+http-outgoing-0 << X-RateLimit-Requests-Reset: 2549590
+http-outgoing-0 << Content-Length: 1388
+http-outgoing-0 << Connection: keep-alive
+Connection can be kept alive indefinitely
+Connection [id: 0][route: {s}->https://yahoo-weather5.p.rapidapi.com:443] can be kept alive indefinitely
+Connection released: [id: 0][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 200]
+Cancelling request execution
+200
+[text/html; charset=utf-8]{"location":{"country":"India","city":"Coimbatore","woeid":2295422,"timezone_id":"Asia/Kolkata","region":" TN","lat":11.01388,"long":76.969391},"current_observation":{"atmosphere":{"rising":0,"visibility":13.02,"humidity":95,"pressure":956},"condition":{"code":27,"temperature":22,"text":"Mostly Cloudy"},"astronomy":{"sunrise":"5:59 am","sunset":"6:44 pm"},"pubDate":1623033000,"wind":{"chill":25,"speed":12.8,"direction":225}},"forecasts":[{"date":1623034800,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Mon"},{"date":1623121200,"high":31,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Tue"},{"date":1623207600,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Wed"},{"date":1623294000,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Thu"},{"date":1623380400,"high":30,"code":26,"low":22,"text":"Cloudy","day":"Fri"},{"date":1623466800,"high":28,"code":23,"low":22,"text":"Breezy","day":"Sat"},{"date":1623553200,"high":25,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Sun"},{"date":1623639600,"high":25,"code":11,"low":21,"text":"Showers","day":"Mon"},{"date":1623726000,"high":26,"code":47,"low":21,"text":"Scattered Thunderstorms","day":"Tue"},{"date":1623812400,"high":26,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Wed"},{"date":1623898800,"high":26,"code":39,"low":21,"text":"Scattered Showers","day":"Thu"}]}
+Temperature: 22
+Output os saving weather data: 1
+Finished saving current weather data.
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+http-outgoing-0: Close connection
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+viewCurrentWeatherAtZipCode
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Request URL: https://yahoo-weather5.p.rapidapi.com/weather?woeid=2295422&f=json&u=c
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 0; route allocated: 0 of 20; total allocated: 0 of 200]
+Connection leased: [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+Opening connection {s}->https://yahoo-weather5.p.rapidapi.com:443
+Connecting to yahoo-weather5.p.rapidapi.com/3.1.4.183:443
+Connecting socket to yahoo-weather5.p.rapidapi.com/3.1.4.183:443 with timeout 10000
+Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+Starting handshake
+Secure session established
+ negotiated protocol: TLSv1.2
+ negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+ peer principal: CN=*.p.rapidapi.com
+ peer alternative names: [*.p.rapidapi.com]
+ issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+Connection established 192.168.0.104:56948<->3.1.4.183:443
+http-outgoing-1: set socket timeout to 60000
+Executing request GET /weather?woeid=2295422&f=json&u=c HTTP/1.1
+Target auth state: UNCHALLENGED
+Proxy auth state: UNCHALLENGED
+http-outgoing-1 >> GET /weather?woeid=2295422&f=json&u=c HTTP/1.1
+http-outgoing-1 >> accept-encoding: gzip
+http-outgoing-1 >> user-agent: unirest-java/1.3.11
+http-outgoing-1 >> x-rapidapi-host: yahoo-weather5.p.rapidapi.com
+http-outgoing-1 >> x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca
+http-outgoing-1 >> Host: yahoo-weather5.p.rapidapi.com
+http-outgoing-1 >> Connection: Keep-Alive
+http-outgoing-1 >> "GET /weather?woeid=2295422&f=json&u=c HTTP/1.1[\r][\n]"
+http-outgoing-1 >> "accept-encoding: gzip[\r][\n]"
+http-outgoing-1 >> "user-agent: unirest-java/1.3.11[\r][\n]"
+http-outgoing-1 >> "x-rapidapi-host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-1 >> "x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca[\r][\n]"
+http-outgoing-1 >> "Host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-1 >> "[\r][\n]"
+http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+http-outgoing-1 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+http-outgoing-1 << "Date: Sun, 06 Jun 2021 21:09:05 GMT[\r][\n]"
+http-outgoing-1 << "Etag: W/"56c-Mwgj7y8Lo/vm71tzGhzCkbG8S+U"[\r][\n]"
+http-outgoing-1 << "Function-Execution-Id: 6n7kfxgw56hl[\r][\n]"
+http-outgoing-1 << "Server: RapidAPI-1.2.8[\r][\n]"
+http-outgoing-1 << "X-Cloud-Trace-Context: 4e84ab4fac8c24603995c56dda473e62;o=1[\r][\n]"
+http-outgoing-1 << "X-Powered-By: Express[\r][\n]"
+http-outgoing-1 << "X-RapidAPI-Region: AWS - ap-southeast-1[\r][\n]"
+http-outgoing-1 << "X-RapidAPI-Version: 1.2.8[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Limit: 1000[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Remaining: 965[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Reset: 2549531[\r][\n]"
+http-outgoing-1 << "Content-Length: 1388[\r][\n]"
+http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+http-outgoing-1 << "[\r][\n]"
+http-outgoing-1 << "{"location":{"city":"Coimbatore","region":" TN","woeid":2295422,"country":"India","lat":11.01388,"long":76.969391,"timezone_id":"Asia/Kolkata"},"current_observation":{"wind":{"chill":25,"direction":225,"speed":12.8},"atmosphere":{"humidity":95,"visibility":13.02,"pressure":956,"rising":0},"astronomy":{"sunrise":"5:59 am","sunset":"6:44 pm"},"condition":{"code":27,"text":"Mostly Cloudy","temperature":22},"pubDate":1623033000},"forecasts":[{"day":"Mon","date":1623034800,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Tue","date":1623121200,"low":22,"high":31,"text":"Scattered Thunderstorms","code":47},{"day":"Wed","date":1623207600,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Thu","date":1623294000,"low":22,"high":30,"text":"Thunderstorms","code":4},{"day":"Fri","date":1623380400,"low":22,"high":30,"text":"Cloudy","code":26},{"day":"Sat","date":1623466800,"low":22,"high":28,"text":"Breezy","code":23},{"day":"Sun","date":1623553200,"low":22,"high":25,"text":"Scattered Thunderstorms","code":47},{"day":"Mon","date":1623639600,"low":21,"high":25,"text":"Showers","code":11},{"day":"Tue","date":1623726000,"low":21,"high":26,"text":"Scattered Thunderstorms","code":47},{"day":"Wed","date":1623812400,"low":22,"high":26,"text":"Scattered Thunderstorms","code":47},{"day":"Thu","date":1623898800,"low":21,"high":26,"text":"Scattered Showers","code":39}]}"
+http-outgoing-1 << HTTP/1.1 200 OK
+http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+http-outgoing-1 << Content-Type: text/html; charset=utf-8
+http-outgoing-1 << Date: Sun, 06 Jun 2021 21:09:05 GMT
+http-outgoing-1 << Etag: W/"56c-Mwgj7y8Lo/vm71tzGhzCkbG8S+U"
+http-outgoing-1 << Function-Execution-Id: 6n7kfxgw56hl
+http-outgoing-1 << Server: RapidAPI-1.2.8
+http-outgoing-1 << X-Cloud-Trace-Context: 4e84ab4fac8c24603995c56dda473e62;o=1
+http-outgoing-1 << X-Powered-By: Express
+http-outgoing-1 << X-RapidAPI-Region: AWS - ap-southeast-1
+http-outgoing-1 << X-RapidAPI-Version: 1.2.8
+http-outgoing-1 << X-RateLimit-Requests-Limit: 1000
+http-outgoing-1 << X-RateLimit-Requests-Remaining: 965
+http-outgoing-1 << X-RateLimit-Requests-Reset: 2549531
+http-outgoing-1 << Content-Length: 1388
+http-outgoing-1 << Connection: keep-alive
+Connection can be kept alive indefinitely
+Connection [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443] can be kept alive indefinitely
+Connection released: [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 200]
+Cancelling request execution
+200
+[text/html; charset=utf-8]{"location":{"country":"India","city":"Coimbatore","woeid":2295422,"timezone_id":"Asia/Kolkata","region":" TN","lat":11.01388,"long":76.969391},"current_observation":{"atmosphere":{"rising":0,"visibility":13.02,"humidity":95,"pressure":956},"condition":{"code":27,"temperature":22,"text":"Mostly Cloudy"},"astronomy":{"sunrise":"5:59 am","sunset":"6:44 pm"},"pubDate":1623033000,"wind":{"chill":25,"speed":12.8,"direction":225}},"forecasts":[{"date":1623034800,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Mon"},{"date":1623121200,"high":31,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Tue"},{"date":1623207600,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Wed"},{"date":1623294000,"high":30,"code":4,"low":22,"text":"Thunderstorms","day":"Thu"},{"date":1623380400,"high":30,"code":26,"low":22,"text":"Cloudy","day":"Fri"},{"date":1623466800,"high":28,"code":23,"low":22,"text":"Breezy","day":"Sat"},{"date":1623553200,"high":25,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Sun"},{"date":1623639600,"high":25,"code":11,"low":21,"text":"Showers","day":"Mon"},{"date":1623726000,"high":26,"code":47,"low":21,"text":"Scattered Thunderstorms","day":"Tue"},{"date":1623812400,"high":26,"code":47,"low":22,"text":"Scattered Thunderstorms","day":"Wed"},{"date":1623898800,"high":26,"code":39,"low":21,"text":"Scattered Showers","day":"Thu"}]}
+Temperature: 22
+Output os saving weather data: 1
+Finished saving current weather data.
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+viewCurrentWeatherAtZipCode
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Request URL: https://yahoo-weather5.p.rapidapi.com/weather?woeid=2295421&f=json&u=c
+CookieSpec selected: default
+Auth cache not set in the context
+Connection request: [route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 200]
+http-outgoing-1 << "[read] I/O error: Read timed out"
+Connection leased: [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 200]
+http-outgoing-1: set socket timeout to 60000
+Executing request GET /weather?woeid=2295421&f=json&u=c HTTP/1.1
+Target auth state: UNCHALLENGED
+Proxy auth state: UNCHALLENGED
+http-outgoing-1 >> GET /weather?woeid=2295421&f=json&u=c HTTP/1.1
+http-outgoing-1 >> accept-encoding: gzip
+http-outgoing-1 >> user-agent: unirest-java/1.3.11
+http-outgoing-1 >> x-rapidapi-host: yahoo-weather5.p.rapidapi.com
+http-outgoing-1 >> x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca
+http-outgoing-1 >> Host: yahoo-weather5.p.rapidapi.com
+http-outgoing-1 >> Connection: Keep-Alive
+http-outgoing-1 >> "GET /weather?woeid=2295421&f=json&u=c HTTP/1.1[\r][\n]"
+http-outgoing-1 >> "accept-encoding: gzip[\r][\n]"
+http-outgoing-1 >> "user-agent: unirest-java/1.3.11[\r][\n]"
+http-outgoing-1 >> "x-rapidapi-host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-1 >> "x-rapidapi-key: dc6b86aa03msh5275f816431d42cp115003jsn0b2935345aca[\r][\n]"
+http-outgoing-1 >> "Host: yahoo-weather5.p.rapidapi.com[\r][\n]"
+http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+http-outgoing-1 >> "[\r][\n]"
+http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+http-outgoing-1 << "Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"[\r][\n]"
+http-outgoing-1 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+http-outgoing-1 << "Date: Sun, 06 Jun 2021 21:09:32 GMT[\r][\n]"
+http-outgoing-1 << "Etag: W/"537-MEpmoJ7KD0QZBz8KASa8mG4OSYg"[\r][\n]"
+http-outgoing-1 << "Function-Execution-Id: k8sd90yhh3ef[\r][\n]"
+http-outgoing-1 << "Server: RapidAPI-1.2.8[\r][\n]"
+http-outgoing-1 << "X-Cloud-Trace-Context: 3c6b249e4eec1d43c61d9510dabb996d;o=1[\r][\n]"
+http-outgoing-1 << "X-Powered-By: Express[\r][\n]"
+http-outgoing-1 << "X-RapidAPI-Region: AWS - ap-southeast-1[\r][\n]"
+http-outgoing-1 << "X-RapidAPI-Version: 1.2.8[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Limit: 1000[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Remaining: 964[\r][\n]"
+http-outgoing-1 << "X-RateLimit-Requests-Reset: 2549504[\r][\n]"
+http-outgoing-1 << "Content-Length: 1335[\r][\n]"
+http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+http-outgoing-1 << "[\r][\n]"
+http-outgoing-1 << "{"location":{"city":"Mysuru","region":" KA","woeid":2295421,"country":"India","lat":12.30512,"long":76.644608,"timezone_id":"Asia/Kolkata"},"current_observation":{"wind":{"chill":24,"direction":270,"speed":9.6},"atmosphere":{"humidity":95,"visibility":12.73,"pressure":927,"rising":0},"astronomy":{"sunrise":"5:57 am","sunset":"6:47 pm"},"condition":{"code":26,"text":"Cloudy","temperature":21},"pubDate":1623033000},"forecasts":[{"day":"Mon","date":1623034800,"low":20,"high":30,"text":"Mostly Cloudy","code":28},{"day":"Tue","date":1623121200,"low":20,"high":30,"text":"Mostly Cloudy","code":28},{"day":"Wed","date":1623207600,"low":20,"high":28,"text":"Scattered Thunderstorms","code":47},{"day":"Thu","date":1623294000,"low":20,"high":28,"text":"Scattered Thunderstorms","code":47},{"day":"Fri","date":1623380400,"low":20,"high":28,"text":"Cloudy","code":26},{"day":"Sat","date":1623466800,"low":21,"high":27,"text":"Cloudy","code":26},{"day":"Sun","date":1623553200,"low":20,"high":23,"text":"Showers","code":11},{"day":"Mon","date":1623639600,"low":20,"high":23,"text":"Showers","code":11},{"day":"Tue","date":1623726000,"low":21,"high":24,"text":"Rain","code":12},{"day":"Wed","date":1623812400,"low":21,"high":24,"text":"Rain","code":12},{"day":"Thu","date":1623898800,"low":21,"high":25,"text":"Scattered Showers","code":39}]}"
+http-outgoing-1 << HTTP/1.1 200 OK
+http-outgoing-1 << Alt-Svc: h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+http-outgoing-1 << Content-Type: text/html; charset=utf-8
+http-outgoing-1 << Date: Sun, 06 Jun 2021 21:09:32 GMT
+http-outgoing-1 << Etag: W/"537-MEpmoJ7KD0QZBz8KASa8mG4OSYg"
+http-outgoing-1 << Function-Execution-Id: k8sd90yhh3ef
+http-outgoing-1 << Server: RapidAPI-1.2.8
+http-outgoing-1 << X-Cloud-Trace-Context: 3c6b249e4eec1d43c61d9510dabb996d;o=1
+http-outgoing-1 << X-Powered-By: Express
+http-outgoing-1 << X-RapidAPI-Region: AWS - ap-southeast-1
+http-outgoing-1 << X-RapidAPI-Version: 1.2.8
+http-outgoing-1 << X-RateLimit-Requests-Limit: 1000
+http-outgoing-1 << X-RateLimit-Requests-Remaining: 964
+http-outgoing-1 << X-RateLimit-Requests-Reset: 2549504
+http-outgoing-1 << Content-Length: 1335
+http-outgoing-1 << Connection: keep-alive
+Connection can be kept alive indefinitely
+Connection [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443] can be kept alive indefinitely
+Connection released: [id: 1][route: {s}->https://yahoo-weather5.p.rapidapi.com:443][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 200]
+Cancelling request execution
+200
+[text/html; charset=utf-8]{"location":{"country":"India","city":"Mysuru","woeid":2295421,"timezone_id":"Asia/Kolkata","region":" KA","lat":12.30512,"long":76.644608},"current_observation":{"atmosphere":{"rising":0,"visibility":12.73,"humidity":95,"pressure":927},"condition":{"code":26,"temperature":21,"text":"Cloudy"},"astronomy":{"sunrise":"5:57 am","sunset":"6:47 pm"},"pubDate":1623033000,"wind":{"chill":24,"speed":9.6,"direction":270}},"forecasts":[{"date":1623034800,"high":30,"code":28,"low":20,"text":"Mostly Cloudy","day":"Mon"},{"date":1623121200,"high":30,"code":28,"low":20,"text":"Mostly Cloudy","day":"Tue"},{"date":1623207600,"high":28,"code":47,"low":20,"text":"Scattered Thunderstorms","day":"Wed"},{"date":1623294000,"high":28,"code":47,"low":20,"text":"Scattered Thunderstorms","day":"Thu"},{"date":1623380400,"high":28,"code":26,"low":20,"text":"Cloudy","day":"Fri"},{"date":1623466800,"high":27,"code":26,"low":21,"text":"Cloudy","day":"Sat"},{"date":1623553200,"high":23,"code":11,"low":20,"text":"Showers","day":"Sun"},{"date":1623639600,"high":23,"code":11,"low":20,"text":"Showers","day":"Mon"},{"date":1623726000,"high":24,"code":12,"low":21,"text":"Rain","day":"Tue"},{"date":1623812400,"high":24,"code":12,"low":21,"text":"Rain","day":"Wed"},{"date":1623898800,"high":25,"code":39,"low":21,"text":"Scattered Showers","day":"Thu"}]}
+Temperature: 21
+Output os saving weather data: 1
+Finished saving current weather data.
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+viewWeatherHistoryAtZipCode: 
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Weather history data for zipCode: {2021-06-07=22, 2021-06-07=22}
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+viewWeatherHistoryAtZipCode: 
+Weather history data for zipCode: {2021-06-07=21}
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
+viewWeatherHistoryAtZipCode: 
+Weather history data for zipCode: {}
+Closing expired connections
+Closing connections idle longer than 30 SECONDS
